@@ -1,6 +1,6 @@
 myfile = open("poem.txt", 'r')
 ch = ' '
-vCount, cCount = 0
+vCount, cCount = 0, 0
 vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u']
 
 while ch:
@@ -8,7 +8,7 @@ while ch:
     alphaCheck = ch.isalpha()
     if (ch in vowels) and alphaCheck :
         vCount += 1
-    elif ch.isalph():
+    elif ch.isalpha():
         cCount += 1
 
 print("Vowels in file :", vCount)
